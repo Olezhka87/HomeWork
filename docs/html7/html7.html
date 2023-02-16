@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML lesson7</title>
+</head>
+
+<body>
+	<picture> <!-- адаптив для изображений - в зависомости от размера устройства - тест -->
+		<source media="(max-width: 500px)" srcset="https://picsum.photos/id/28/350/350">
+		<source media="(max-width: 535px)" srcset="https://picsum.photos/id/28/380/380">
+		<source media="(max-width: 600px)" srcset="https://picsum.photos/id/28/400/400">
+		<source media="(max-width: 670px)" srcset="https://picsum.photos/id/28/450/450">
+		<source media="(max-width: 800px)" srcset="https://picsum.photos/id/28/500/500">
+		<source media="(max-width: 930px)" srcset="https://picsum.photos/id/28/600/600">
+		<source media="(max-width: 1120px)" srcset="https://picsum.photos/id/28/700/700">
+		<img src="https://picsum.photos/id/28/850/850" alt="природа">
+	</picture>
+	<figure> <!-- правильный семантический блок для изображений -->
+		<img src="https://picsum.photos/id/6/450/450" alt="Обучение за компьютером">
+		<figcaption>Обучение веб разработке - приведет к успеху</figcaption>
+	</figure>
+</body>
+
+</html>
