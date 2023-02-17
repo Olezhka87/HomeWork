@@ -1,0 +1,9 @@
+.element {
+	border: 2px solid #008000;
+	height: 10rem;
+	width: 10rem;
+	position: fixed;
+		bottom: 100px;
+		right: 50px;
+	
+}
