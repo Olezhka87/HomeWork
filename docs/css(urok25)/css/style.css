@@ -1,0 +1,16 @@
+.wrapper {
+	padding: 100px;
+}
+
+.block {
+	border: 2px solid #008000;
+	height: 70vh;
+}
+
+.cars {
+	height: 70vh;
+	background-image: url("../images/cars.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translatex(0.1vh) rotate(-30deg);
+}
