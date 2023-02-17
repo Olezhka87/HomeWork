@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 700;
+	src: local("Oswald-Bold"),
+		local("Oswald Bold"),
+		url("../fonts/Oswald-Bold.woff2") format('woff2'),
+		url("../fonts/Oswald-Bold.woff") format('woff'),
+		url("../fonts/Oswald-Bold.eot") format('eot');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 200;
+	src: local("Oswald-ExtraLight"),
+		local("Oswald ExtraLight"),
+		url("fonts/Oswald-ExtraLight.woff2") format('woff2'),
+		url("fonts/Oswald-ExtraLight.woff") format('woff'),
+		url("fonts/Oswald-ExtraLight.eot") format('eot');
+	font-display: swap;
+}
+
+
+
+h1 {
+	color: #6e0eeb;
+	font-size: 3rem;
+	line-height: 200%;
+	font-style: normal;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+}
+
+.shadow {
+	text-shadow: 2px 2px 4px #000;
+}
+
+.urok22 {
+	font-size: 2rem;
+	padding: 25px 25px 0 25px;
+	width: 50vw;
+	height: 100px;
+	overflow: scroll;
+}
+
+.wrapper23 {
+	padding: 100px 100px;
+	height: 100vh;
+}
+
+.block {
+	height: 100%;
+	background: url("../images/1.png") 0 0 / auto no-repeat;
+	border-width: 300px;
+	border: 3px solid #ddb226;
+	background-position: center;
+	background-color: #808080;
+}
+
+.wrapper23-1 {
+	padding: 100px 100px;
+	height: 100vh;
+}
+
+.block2 {
+	height: 100%;
+	background: url("../images/1.png") 50% 50% / auto no-repeat, #3d1cd3;
+}
