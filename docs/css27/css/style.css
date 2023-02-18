@@ -1,0 +1,26 @@
+.wrapper {
+	height: 300px;
+	width: 300px;
+	padding: 300px;
+}
+
+
+.text {
+	font-size: 90px;
+	letter-spacing: 20px;
+	font-weight: bold;
+	animation: text 4s linear -1s infinite normal none;
+	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+
+@keyframes text {
+	30% {
+		color: #af2828;
+	}
+
+	60% {
+		color: #0e0c0c;
+	}
+}
