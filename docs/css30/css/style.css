@@ -1,0 +1,9 @@
+.menu__items {
+	font-size: 90px;
+}
+
+.menu__items:first-child:hover {
+	color: #eb5701;
+}
+
+
