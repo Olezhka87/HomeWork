@@ -9,7 +9,7 @@ html, body {
 .wrapper {
 	min-height: 100%;
 	width: 100%;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .container {
@@ -23,7 +23,7 @@ html, body {
 
 .header {
 	height: 100vh;
-	background: url("../images/decor/shape-bg.svg") 50% 30% / cover no-repeat, linear-gradient(55.95deg, rgba(255, 63, 58, .2) 0%, rgba(247, 94, 5, .2) 100%);
+	background: url("../images/decor/shape-bg.svg") 100% 0 / cover no-repeat, linear-gradient(55.95deg, rgba(255, 63, 58, .2) 0%, rgba(247, 94, 5, .2) 100%);
 	display: flex;
 	flex-direction: column;
 }
@@ -84,6 +84,7 @@ html, body {
 .header__nav-box {
 	display: flex;
 	align-items: center;
+	
 
 }
 
@@ -108,6 +109,7 @@ html, body {
 .header__nav-user {
 	display: inline-block;
 	justify-content: center;
+	/* align-items: center; */
 	position: relative;
 	padding-left: 28px;
 
@@ -243,8 +245,8 @@ html, body {
 	justify-content: center;
 	grid-template-columns: 256px 8px 256px 8px 256px 8px 256px;
 	grid-template-rows: 1fr;
-	grid-template-areas:
-		"header__row-item";
+	/* grid-template-areas:
+		"header__row-item"; */
 	margin-bottom: 80px;
 	grid-column-start: 1;
 	grid-column-end: 3;
