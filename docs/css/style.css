@@ -710,7 +710,8 @@ html, body {
 	background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
 	transform: translateY(50%);
 	transition: all .1s;
-	padding-bottom: 28px;
+	padding: 21px;
+		
 }
 
 
@@ -745,9 +746,8 @@ html, body {
 .team__social-items {
 	list-style-type: none;
 	/* Убираем маркеры */
-	margin-right: 12px;
+	margin-right: 15px;
 	color: #787A80;
-
 }
 
 .social-link {
@@ -808,4 +808,29 @@ html, body {
 
 .team__slider-prev {
 	margin-right: 30px;
+	align-items: center;
+	justify-self: center;
+}
+
+
+.slick-dots {
+	text-align: center;
+	display: flex; 
+	justify-content: center; 
+	margin-top: 20px;
+}        
+
+.slick-dots button {
+	font-size: 0; 
+  border: none; 
+  border-radius: 2px;
+  width: 27px;
+	height: 3px; 
+  margin: 5px; 
+  outline: none;
+	border: 3px solid #B3B7BC;
+}
+
+.slick-active > button {
+  border: 3px solid #424551;
 }
