@@ -7,6 +7,7 @@ $('.slider__team').slick({
 	arrows: false,
 	slidesToShow: 4,
 	draggable: false,
+	variableWidth: true,
 })
 
 $('.team__slider-prev').on('click', function (e) {
