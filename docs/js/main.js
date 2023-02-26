@@ -21,3 +21,19 @@ $('.team__slider-next').on('click', function (e) {
 	$('.slider__team').slick('slickNext')
 	})
 
+
+	$('.testimonials__slider').slick({
+		arrows: false,
+		dots: true,
+		dotsClass: 'dots-testimonials',
+	})
+
+	$('.testimonials-prev').on('click', function (e) {
+		e.preventDefault()
+		$('.testimonials__slider').slick('slickPrev')
+		})
+	$('.testimonials-next').on('click', function (e) {
+		e.preventDefault()
+		$('.testimonials__slider').slick('slickNext')
+		})
+

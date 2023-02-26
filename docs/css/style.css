@@ -711,7 +711,7 @@ html, body {
 	transform: translateY(50%);
 	transition: all .1s;
 	padding: 21px;
-		
+
 }
 
 
@@ -815,22 +815,242 @@ html, body {
 
 .slick-dots {
 	text-align: center;
-	display: flex; 
-	justify-content: center; 
+	display: flex;
+	justify-content: center;
 	margin-top: 20px;
-}        
+}
 
 .slick-dots button {
-	font-size: 0; 
-  border: none; 
-  border-radius: 2px;
-  width: 27px;
-	height: 3px; 
-  margin: 5px; 
-  outline: none;
+	font-size: 0;
+	border: none;
+	border-radius: 2px;
+	width: 27px;
+	height: 3px;
+	margin: 5px;
+	outline: none;
 	border: 3px solid #B3B7BC;
 }
 
-.slick-active > button {
-  border: 3px solid #424551;
+.slick-active>button {
+	border: 3px solid #424551;
 }
+
+
+/* ------ testimonials ----- */
+
+.main__testimonials {
+	background: #F4F5F7;
+}
+
+.testimonial__slider-wrapper {}
+
+.main__testimonials-inner {}
+
+
+.testimonials__title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.testimonials__subtitle {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+}
+
+.testimonials__title-text {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1E212C;
+}
+
+.main__testimonials {}
+
+.testimonials {
+	padding-bottom: 195px;
+	/* background: url('../images/decor/testimonials.svg') 33px -79px / 100% no-repeat, #F4F5F7; */
+	position: relative;
+}
+
+.testimonials::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-48%, -51%);
+	background: url('../images/decor/testimonials.svg') 0 0 / 100% no-repeat, #F4F5F7;
+	width: 1845px;
+	height: 816px;
+
+}
+
+.main__testimonials-inner {
+	position: relative;
+	z-index: 1;
+}
+
+.main__slider-wrapper {
+	padding: 0 50px;
+	position: relative;
+}
+
+.testimonials__slider {
+	background: #FFFFFF;
+	box-shadow: 0px 80px 80px rgba(154, 156, 165, 0.08), 0px 30px 24px rgba(154, 156, 165, 0.05), 0px 12px 10px rgba(154, 156, 165, 0.04), 0px 4px 4px rgba(30, 33, 44, 0.03);
+	border-radius: 4px;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.testimonials__slide {
+	padding: 64px;
+}
+
+.testimonials__slider-inner {
+	max-width: 810px;
+	padding-left: 48px;
+}
+
+.testimonials__content {}
+
+.testimonials__quote {
+	font-size: 20px;
+	line-height: 1.5;
+	color: #424551;
+	margin-bottom: 24px;
+	font-weight: 400;
+	position: relative;
+}
+
+.testimonials__quote::before {
+	content: "";
+	background: url('../images/icons/quote-item.svg') 0 0 / 100% no-repeat;
+	height: 20px;
+	width: 28px;
+	position: absolute;
+	top: 0;
+	left: -48px;
+}
+
+.testimonials__user {
+	display: flex;
+	align-items: center;
+}
+
+.testimonials__userphoto {
+	margin-right: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+
+.testimonials__userinfo {}
+
+.testimonials__name {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #1E212C;
+	margin-bottom: 4px;
+}
+
+.testimonials__position {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #787A80;
+}
+
+.dots__wrapper {
+	position: relative;
+}
+
+.dots-testimonials {
+	text-align: center;
+	display: flex;
+	margin-top: 20px;
+	position: absolute;
+	left: 410px;
+	bottom: -60px;
+}
+
+.dots-testimonials button {
+	font-size: 0;
+	border: none;
+	border-radius: 2px;
+	width: 27px;
+	height: 3px;
+	margin: 5px;
+	outline: none;
+	border: 3px solid #B3B7BC;
+	text-align: center;
+}
+
+.slick-active>button {
+	border: 3px solid #424551;
+
+}
+
+.testimonials__arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	z-index: 5;
+}
+
+.testimonials__arrow::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 48px;
+	height: 48px;
+	background-color: #F75E05;
+	border-radius: 50%;
+	z-index: -1;
+	align-items: center;
+	transition: all .3s;
+}
+
+.testimonials-prev {
+	left: 0;
+}
+
+.testimonials-prev:hover::before {
+	transform: translate(-75%, -50%) scale(1);
+
+}
+
+.testimonials-next {
+	right: 0;
+	justify-content: flex-end;
+}
+
+.testimonials-next:hover::before {
+	transform: translate(-25%, -50%) scale(1);
+
+}
+
+.testimonials__arrow path {
+	transition: all .3s;
+}
+
+.testimonials__arrow:hover path {
+	fill: #fff;
+}
+
+
+
+/* .testimonials__arrow:hover::before {
+	transform: translate(-75%, -50%) scale(1);
+
+} */
