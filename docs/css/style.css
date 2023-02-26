@@ -35,7 +35,7 @@ html, body {
 	flex-direction: column;
 }
 
-/* --------------- млашние классы--------------------------------- */
+/* --------------- младшние классы--------------------------------- */
 
 .header__top {
 	margin-bottom: 110px;
@@ -872,7 +872,6 @@ html, body {
 
 .testimonials {
 	padding-bottom: 195px;
-	/* background: url('../images/decor/testimonials.svg') 33px -79px / 100% no-repeat, #F4F5F7; */
 	position: relative;
 }
 
@@ -881,10 +880,10 @@ html, body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-48%, -51%);
-	background: url('../images/decor/testimonials.svg') 0 0 / 100% no-repeat, #F4F5F7;
-	width: 1845px;
-	height: 816px;
+	transform: translate(-45%, -55%);
+	background: url(../images/decor/testimonials.svg) 84px 12px / 93% no-repeat, #F4F5F7;
+	width: 1971px;
+	height: 770px;
 
 }
 
@@ -1050,7 +1049,79 @@ html, body {
 
 
 
-/* .testimonials__arrow:hover::before {
-	transform: translate(-75%, -50%) scale(1);
+/* -----------company --------------- */
 
-} */
+.main__company {}
+
+.company {
+	margin-top: 0;
+	padding-bottom: 177px;
+	background: #F4F5F7;
+}
+
+.container {}
+
+.company__inner {
+	position: relative;
+
+}
+
+.company__title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.company__subtitle {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+}
+
+.company__title-text {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+
+.company__list {
+	display: grid;
+	grid-template: repeat(2, auto) / repeat(6, 1fr);
+	gap: 40px 102px;
+}
+
+.company__inner::before {
+	content: "";
+	background: url('../images/decor/4.svg') 0 0 / 100% no-repeat;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: 367px;
+  left: -240px;
+}
+
+.company__item img {
+	-webkit-filter: brightness(100%);
+	}
+
+
+.company__link-logo { 
+	filter:none;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	
+}
+
+.company__link-logo:hover { 
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	transition: all .5s;
+}
+
