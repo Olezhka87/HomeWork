@@ -67,20 +67,19 @@ $("#menu, .header__nav, .footer__links, .footer__bottom-inner, .header__nav-box,
 		top = $(id).offset().top;
 	//анимируем переход на расстояние - top за 1500 мс
 	$('body,html').animate({ scrollTop: top }, 1000);
+});
+
+$(windows).on('scroll', function (e) {
+
 })
 
-setInterval(() => {
-	if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
+	if($(window).scrollTop() > 0) {
 		$('.burger').addClass('burger--follow')
-	} else {
+} else {
 		$('.burger').removeClass('burger--follow')
-	}
-})
+}
 
-$('.burger, .overlay').on('click', function (e) {
-	e.preventDefault();
+$('.burger').on('click', function (e) {
+	e.preventDefault()
 	$('.header__top').toggleClass('header__top--open')
-	$('.overlay').toggleClass('overlay--show')
-	$('.burger').toggleClass('active')
-	
 })
