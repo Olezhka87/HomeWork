@@ -1549,7 +1549,15 @@ html, body {
 }
 
 .contact__socials-item {
-	margin-right: 32px;
+	display: block;
+	transition: all .5s;
+	margin-right: 20px;
+}
+
+.contact__socials-item:last-child {
+	display: block;
+	transition: all .5s;
+	margin-right: 0;
 }
 
 .contact__soc-img path {
@@ -1567,4 +1575,382 @@ html, body {
 	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 	border-radius: 4px;
 	overflow: hidden;
+}
+
+/* -------- contact-form ----- */
+
+.main__questions {
+	padding-bottom: 180px;
+}
+
+.questions__inner {
+	display: grid;
+	grid-template: repeat(1, auto) / repeat(2, auto);
+	align-items: center;
+	justify-content: space-between;
+}
+
+.questions__input {
+	margin-left: 30px;
+}
+
+.questions__title {
+	margin-bottom: 40px;
+}
+
+.questions__subtitle {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+}
+
+.questions__title-text {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+
+}
+
+.questions__form {}
+
+.questions__form-row {
+	display: grid;
+	grid-template: repeat(1, auto) / repeat(2, auto);
+	margin-bottom: 24px;
+}
+
+.questions__form-label {
+	padding-bottom: 8px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-right: 28px;
+	flex: 1 1 auto;
+}
+
+.questions__form-label:last-child {
+	margin-right: 0;
+}
+
+.questions__form-input,
+.questions__textarea {
+	display: block;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 16px;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.questions__form-input::placeholder,
+.questions__textarea::placeholder {
+	color: #9A9CA5;
+}
+
+.questions__label-text {
+	resize: none;
+	display: block;
+	margin-bottom: 48px;
+}
+
+.questions__textarea {
+	resize: none;
+	height: 128px;
+}
+
+.queations__label-check {
+	display: grid;
+	grid-template: repeat(1, auto) / 25px minmax(auto, 287px);
+	margin-right: 50px;
+	width: 100%;
+
+}
+
+.queations__chekbox {
+	position: relative;
+	height: 16px;
+	width: 16px;
+	flex: 0 0 auto;
+	margin: 5px 12px 0 0;
+}
+
+.questions__form-default {
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.queastion__form-custom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #424551;
+	border-radius: 3px;
+	cursor: pointer;
+
+}
+
+.questions__form-default:checked+.queastion__form-custom {
+	background: url(../images/icons/check.svg) 50% 50% no-repeat, #FF3F3A;
+	border: 1px solid #FF3F3A;
+}
+
+.queastion__form-btn {
+	width: 100%;
+	align-self: center;
+	text-align: center;
+	margin-right: 0;
+	font-size: 16px;
+}
+
+.queations__label-check p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+}
+
+
+/* -------------- footer ------------ */
+
+footer {
+	color: #fff;
+}
+
+.footer__top-inner {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -15px;
+}
+
+.footer__top {
+	background: #1E212C;
+	padding: 81px 0 60px;
+}
+
+.footer__col {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+}
+
+
+.footer__col:first-child {
+	max-width: 310px;
+}
+
+.footer__col:last-child {
+	max-width: 315px;
+
+}
+
+.footer__logo {
+	margin-bottom: 25px;
+}
+
+.footer__logo-box {
+	margin-bottom: 25px;
+}
+
+.logo {}
+
+.footer__text {
+	margin-bottom: 38px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: #ffffff99;
+
+}
+
+.contact__socials {}
+
+.contact__socials-item:hover path {
+	fill: #fff;
+}
+
+.contact__soc-img {}
+
+.footer__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	align-items: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 12px;
+	white-space: nowrap;
+}
+
+.footer__col:last-child  .footer__title{
+	white-space: normal;
+}
+
+.footer__links {}
+
+.footer__item {
+	margin-bottom: 8px;
+}
+
+.footer__item:last-child {
+	margin-bottom: 0;
+}
+
+.footer__link {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #FFFFFF;
+	opacity: 0.6;
+	transition: all .5s;
+	white-space: nowrap;
+}
+
+.footer__link path {}
+
+.footer__link:hover {
+	opacity: 1;
+}
+
+.footer__form {
+
+}
+
+.footer__input {
+	border-radius: 4px;
+	padding: 9px 12px;
+	color: #fff;
+	width: 100%;
+	background: transparent;
+}
+
+.footer__input-btn {
+	position: relative;
+	background: transparent;
+	padding: 10px 12px;
+}
+
+.footer__input-btn::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 25%;
+    left: -25%;
+		background: url(../images/icons/arrow-right-mini.svg) 0 0 / 100% no-repeat;
+		width: 16px;
+		height: 16px;
+		transition: all .5s;
+}
+
+.footer__input-btn:hover::before {
+	transform: scale(1.3);
+} 
+
+.footer__form-items {
+	background: #ffffff1f;
+	border: 1px solid #ffffff33;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	display: flex;
+}
+
+
+.footer__input::placeholder {
+	font-size: 12px;
+	line-height: 150%;
+	color: #fff;
+	opacity: 0.6;
+}
+
+.footer__decs {
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+.footer__bottom {
+	background: #292C37;
+	
+
+}
+
+.footer__bottom-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.footer__copyright {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #FFFFFF;
+}
+
+.footer__copyright span {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background: url(../images/icons/heart.svg) 0 0 / 100% 100% no-repeat;
+	vertical-align: sub;
+}
+
+.footer__go-top {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+	opacity: 0.6;
+	text-transform: uppercase;
+}
+
+.footer__go-top:hover {
+	opacity: 1;
+}
+
+.footer__link--phone {
+	position: relative;
+	padding-left: 24px;
+}
+
+.footer__link--phone::before {
+	content: "";
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	background: url(../images/icons/phone-icon-mini.svg) 0 0 / 100% no-repeat;
+
+}
+
+.footer__link--mail {
+	position: relative;
+	padding-left: 24px;
+}
+
+.footer__link--mail::before {
+	content: "";
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	background: url(../images/icons/mail-icon-mini.svg) 0 0 / 100% no-repeat;
 }
