@@ -56,31 +56,3 @@ $('.acc__item').on('click', function (e) {
 	}
 })
 
-
-$("#menu, .header__nav, .footer__links, .footer__bottom-inner, .header__nav-box, .header__buttons").on("click", "a", function (e) {
-
-	//отменяем стандартную обработку нажатия по ссылке
-	e.preventDefault();
-	//забираем идентификатор бока с атрибута href
-	var id = $(this).attr('href'),
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-		top = $(id).offset().top;
-	//анимируем переход на расстояние - top за 1500 мс
-	$('body,html').animate({ scrollTop: top }, 1000);
-})
-
-setInterval(() => {
-	if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
-		$('.burger').addClass('burger--follow')
-	} else {
-		$('.burger').removeClass('burger--follow')
-	}
-})
-
-$('.burger, .overlay').on('click', function (e) {
-	e.preventDefault();
-	$('.header__top').toggleClass('header__top--open')
-	$('.overlay').toggleClass('overlay--show')
-	$('.burger').toggleClass('active')
-	
-})
