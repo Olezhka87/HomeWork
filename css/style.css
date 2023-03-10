@@ -194,7 +194,7 @@ header {
 }
 
 .header__body {
-  background: url(../images/bg/header__bg.svg) 80px 284px/90% no-repeat;
+  background: url(../images/bg/header__bg.svg) 161px 72px/90% no-repeat;
   padding-bottom: 145px;
   flex: 1 1 auto;
 }
