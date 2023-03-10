@@ -5,9 +5,7 @@ body {
 }
 
 header {
-  width: 100vh;
   display: flex;
-  flex-direction: column;
 }
 
 .wrapper {
@@ -19,15 +17,14 @@ header {
 
 .header__container {
   max-width: 1920px;
-  padding: 0px 30px;
-  margin: 15px 30px 0 30px;
+  padding: 30px 30px;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 1450px;
+  max-width: 1300px;
   padding: 0 20px;
   margin: 0 auto;
-  height: 100%;
 }
 
 .header__menu {
@@ -695,4 +692,13 @@ header {
   font-size: 18px;
   line-height: 24px;
   color: #444444;
+}
+
+.reviews__slider {
+  display: flex;
+}
+
+.team__img-team img {
+  border-radius: 15px;
+  margin-right: 30px;
 }/*# sourceMappingURL=style.css.map */
