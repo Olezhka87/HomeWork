@@ -36,11 +36,55 @@ document.addEventListener('DOMContentLoaded', function() {
   // вызываем функцию countdownTimer каждую секунду
   timerId = setInterval(countdownTimer, 1000);
 	
-	$(window).scroll(function(){
-		var sticky = $('.header__menu'),
-				scroll = $(window).scrollTop();
+	// $(window).scroll(function(){
+	// 	var sticky = $('.header__menu'),
+	// 			scroll = $(window).scrollTop();
 	
-		if (scroll >= 100) sticky.addClass('fixed');
-		else sticky.removeClass('fixed');
-	});
+	// 	if (scroll >= 100) sticky.addClass('fixed');
+	// 	else sticky.removeClass('fixed');
+	// });
+
+
+$('.reviews__slider').slick({
+		arrows: false,
+		slidesToShow: 4,
+		draggable: false,
+		dots: true,
+		variableWidth: true,
+		autoplaySpeed: 2000,
+		responsive:
+			[
+				{
+					breakpoint: 1100,
+					settings: {
+						slidesToShow: 3,
+						variableWidth: false,
+					},
+				},
+				{
+					breakpoint: 965,
+					settings: {
+						slidesToShow: 2,
+						variableWidth: true,
+	
+					},
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 1,
+						variableWidth: false,
+					},
+				},
+			]
+	})
+
+	$('.team__slider-prev').on('click', function (e) {
+		e.preventDefault()
+		$('.slider__team').slick('slickPrev')
+	})
+	$('.team__slider-next').on('click', function (e) {
+		e.preventDefault()
+		$('.slider__team').slick('slickNext')
+	})
 });

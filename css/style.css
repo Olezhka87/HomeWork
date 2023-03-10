@@ -29,7 +29,6 @@ header {
 
 .header__menu {
   justify-content: space-between;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,7 +36,7 @@ header {
   z-index: 4;
   background: #F4F9FC;
   box-shadow: 0px 5px 20px #CDDAE1;
- 
+  margin-bottom: 110px;
 }
 
 .header__menu-inner {
@@ -202,7 +201,6 @@ header {
 
 .header__body-inner {
   display: flex;
-  padding-top: 175px;
 }
 
 .header__content {
