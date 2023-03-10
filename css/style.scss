@@ -6,7 +6,6 @@ body {
 
 header {
 	display: flex;
-	
 }
 
 .wrapper {
@@ -26,18 +25,15 @@ header {
 	max-width: 1300px;
 	padding: 0 20px;
 	margin: 0 auto;
-	
 }
 
 .header__menu {
 	justify-content: space-between;
-	
 	top: 0;
 	left: 0;
 	width: 100%;
 	background: transparent;
 	z-index: 4;
-	background: #F4F9FC;
 	box-shadow: 0px 5px 20px #CDDAE1;
 	margin-bottom: 110px;
 }
@@ -78,6 +74,10 @@ header {
 }
 
 .work__img {
+	position: relative;
+	max-width: 302px;
+	height: auto;
+
 	&::after {
 		margin-left: 0px;
 		margin-bottom: 0px;
@@ -211,9 +211,9 @@ header {
 }
 
 .header__body {
-	background: url(../images/bg/header__bg.svg) 80px 284px/90% no-repeat;
+	background: url(../images/bg/header__bg.svg) 109px 72px/90% no-repeat;
 	padding-bottom: 145px;
-	flex: 1 1 auto;
+
 }
 
 .header__body-inner {
@@ -221,7 +221,7 @@ header {
 }
 
 .header__content {
-	margin-right: 200px;
+	margin-right: 30px;
 }
 
 .header__title {
@@ -426,22 +426,13 @@ header {
 	max-width: 330px;
 }
 
-
-.work__img {
-	position: relative;
-	max-width: 302px;
-	height: auto;
-}
-
 .work__item {
-	// background: url(../images/bg/work-bg-item.svg) 0 0 / 100% no-repeat;
 	margin-right: 30px;
 	position: relative;
-
 }
 
 .work__item--text {
-	font-family: 'Gilroy';
+	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 17px;
@@ -589,18 +580,16 @@ header {
 	border-radius: 50%;
 	background: #fff;
 	box-shadow: 0px 20px 40px rgba(255, 107, 0, 0.4), 0px 3px 10px rgba(255, 107, 0, 0.4);
-	transition: all .5s;
+	transition: all 0.5s;
 
+	&:hover {
+		background: #E2001A;
+
+		path {
+			stroke: #fff;
+		}
+	}
 }
-
-.work__button:hover {
-	background: #E2001A;
-}
-
-.work__button:hover path {
-	stroke: #fff;
-}
-
 
 .work__fonts {
 	position: relative;
@@ -625,19 +614,17 @@ header {
 .main__about {
 	background: linear-gradient(180deg, #EBF3F8 0%, rgba(235, 243, 248, 0) 100%);
 	padding-top: 80px;
-
 	justify-content: space-between;
+	margin-bottom: 120px;
 }
 
 .main__about-inner {
 	display: flex;
-	padding-bottom: 120px;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .about__content {
 	margin-right: 120px;
-
 }
 
 .about__title {
@@ -677,6 +664,7 @@ header {
 	color: #FFFFFF;
 	transition: all 0.4s;
 	align-items: center;
+
 	&:hover {
 		background: #FC142F;
 		box-shadow: 0px 10px 30px rgba(252, 20, 47, 0.2);
@@ -688,6 +676,7 @@ header {
 		box-shadow: inset 0px 3px 0px #D10018;
 		border-radius: 15px;
 	}
+
 	span {
 		margin-right: 21px;
 	}
@@ -696,7 +685,6 @@ header {
 .about__icon-play {
 	padding-top: 3.5%;
 }
-
 
 .about__box {
 	margin-top: 16px;
@@ -725,23 +713,124 @@ header {
 	color: #444444;
 }
 
-// ====== slider ===== 
-
-.reviews__slider-wrap {
-}
-.reviews__slider {
+.reviews-heading {
 	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
-.team__slide {
+
+.reviews__title {
+	font-family: "Bebas Neue";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 56px;
+	color: #13171D;
 }
-.team__img-box {
-	
+
+.reviews__slider {
+	margin-right: 5px;
+	margin-left: -5px;
+
 }
-.team__img-team {
+
+.reviews__slide {
 	img {
 		border-radius: 15px;
-		margin-right: 30px;
 	}
 }
-.img__team {
+
+.slick-slide {
+	padding: 0 8px;
+}
+
+
+
+
+.slick-dots {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 45px;
+
+	button {
+		font-size: 0;
+		border: none;
+		border-radius: 50%;
+		width: 4px;
+		height: 4px;
+		margin: 8px;
+		background: #13171D;
+		opacity: 0.4;
+	
+	}
+}
+
+.slick-active {
+	&>button {
+		width: 12px;
+		height: 12px;
+		border: 2px solid #E2001A;
+		border-radius: 50%;
+		background: transparent;
+	}
+	
+}
+
+.team__slider-arrows {
+	display: flex;
+}
+
+
+.team__slider-next {
+	top: 98px;
+	left: 128px;
+	width: 56px;
+	border: solid 0px;
+	outline: none;
+	height: 56px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: block;
+	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	-webkit-box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
+	padding: 21.75px 25.25px;
+
+	&:hover {
+		background: #E2001A;
+
+		path {
+			stroke: #fff;
+		}
+	}
+}
+
+.team__slider-prev {
+	top: 98px;
+	left: 128px;
+	width: 56px;
+	border: solid 0px;
+	outline: none;
+	height: 56px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: block;
+	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	-webkit-box-shadow: 0px 0px 0px 12px rgb(255 255 255 / 50%);
+	box-shadow: 0px 0px 0px 12px rgb(255 255 255 / 50%);
+	padding: 20.75px 23.25px;
+	margin-right: 16px;
+
+	&:hover {
+		background: #E2001A;
+
+		path {
+			stroke: #fff;
+		}
+	}
 }
