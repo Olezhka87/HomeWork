@@ -612,7 +612,7 @@ header {
 }
 
 .main__about {
-	background: linear-gradient(180deg, #EBF3F8 0%, rgba(235, 243, 248, 0) 100%);
+	background: linear-gradient(180deg, #EBF3F8 0%, rgba(235, 243, 248, 0) 100%), url(../images/bg/bg-about.svg) 514px 190px/68% no-repeat;
 	padding-top: 80px;
 	justify-content: space-between;
 	margin-bottom: 120px;
@@ -713,6 +713,11 @@ header {
 	color: #444444;
 }
 
+.main__reviews {
+	margin-bottom: 120px;
+	background: url(../images/bg/bg-rew.svg) 112px 269px / 90% no-repeat;
+}
+
 .reviews-heading {
 	display: flex;
 	justify-content: space-between;
@@ -729,9 +734,30 @@ header {
 }
 
 .reviews__slider {
-	margin-right: 5px;
-	margin-left: -5px;
+	max-width: 1300px;
+	margin: 0 auto;
+	overflow: hidden;
 
+	&-slide {
+		margin: 0 30px;
+	}
+
+	&-list {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+
+	&-item {
+		height: 250px;
+		width: 300px;
+	}
+}
+
+
+.reviews__slide {
+	img {
+		border-radius: 15px;
+	}
 }
 
 .reviews__slide {
@@ -743,8 +769,6 @@ header {
 .slick-slide {
 	padding: 0 8px;
 }
-
-
 
 
 .slick-dots {
@@ -762,7 +786,7 @@ header {
 		margin: 8px;
 		background: #13171D;
 		opacity: 0.4;
-	
+
 	}
 }
 
@@ -774,7 +798,7 @@ header {
 		border-radius: 50%;
 		background: transparent;
 	}
-	
+
 }
 
 .team__slider-arrows {
@@ -782,13 +806,11 @@ header {
 }
 
 
-.team__slider-next {
-	top: 98px;
-	left: 128px;
-	width: 56px;
+.reviews__slider-next {
+	width: 48px;
 	border: solid 0px;
 	outline: none;
-	height: 56px;
+	height: 48px;
 	border-radius: 50%;
 	background-color: #fff;
 	display: block;
@@ -797,7 +819,7 @@ header {
 	transition: all .3s ease-in;
 	-webkit-box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
-	padding: 21.75px 25.25px;
+	padding: 18px 21px;
 
 	&:hover {
 		background: #E2001A;
@@ -808,13 +830,12 @@ header {
 	}
 }
 
-.team__slider-prev {
-	top: 98px;
-	left: 128px;
-	width: 56px;
+
+.reviews__slider-prev {
+	width: 48px;
 	border: solid 0px;
 	outline: none;
-	height: 56px;
+	height: 48px;
 	border-radius: 50%;
 	background-color: #fff;
 	display: block;
@@ -823,8 +844,8 @@ header {
 	transition: all .3s ease-in;
 	-webkit-box-shadow: 0px 0px 0px 12px rgb(255 255 255 / 50%);
 	box-shadow: 0px 0px 0px 12px rgb(255 255 255 / 50%);
-	padding: 20.75px 23.25px;
-	margin-right: 16px;
+	padding: 18px 20px;
+	margin-right: 37px;
 
 	&:hover {
 		background: #E2001A;
@@ -833,4 +854,114 @@ header {
 			stroke: #fff;
 		}
 	}
+}
+
+// slider-order
+
+.main__order {
+	padding-top: 80px;
+	margin-bottom: 115px;
+	background: linear-gradient(180deg, #EBF3F8 0%, rgba(235, 243, 248, 0) 100%);
+}
+
+.main__order--inner {
+
+}
+
+.order-heading {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.order__title {
+	position: relative;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 56px;
+	color: #13171D;
+}
+.main__order-bg {
+	background: url(../images/bg/br-order.svg) 261px 18px/32% no-repeat;
+}
+
+
+.order__arrow-box {}
+
+.order__slider-prev {
+	width: 48px;
+	border: solid 0px;
+	outline: none;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: block;
+	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	-webkit-box-shadow: 0px 0px 0px 12px rgb(255 255 255 / 50%);
+	box-shadow: 0px 0px 0px 12px rgb(255 255 255 / 50%);
+	padding: 18px 20px;
+	margin-right: 37px;
+
+	&:hover {
+		background: #E2001A;
+
+		path {
+			stroke: #fff;
+		}
+	}
+}
+
+.order__slider-next {
+	width: 48px;
+	border: solid 0px;
+	outline: none;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: block;
+	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	-webkit-box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
+	padding: 18px 21px;
+
+	&:hover {
+		background: #E2001A;
+
+		path {
+			stroke: #fff;
+		}
+	}
+}
+
+.order__slide {
+	max-width: 1300px;
+	margin: 0 auto;
+	overflow: hidden;
+
+	&-slide {
+		margin: 0 45px;
+	}
+
+	&-list {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+
+	.order__slide {
+		height: 400px;
+		width: 412px;
+	}
+	img {
+		border-radius: 15px;
+	}
+}
+
+.slick-slide {
+	
 }
