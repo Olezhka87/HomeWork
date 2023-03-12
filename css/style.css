@@ -1072,6 +1072,8 @@ header {
 }
 .gift__slide .gift__box-bg {
   position: relative;
+  box-shadow: 0px 0px 11px rgba(255, 107, 0, 0.08), -83px -8px 85px rgba(255, 107, 0, 0);
+  border-radius: 30px;
 }
 .gift__slide .gift__img {
   position: relative;
