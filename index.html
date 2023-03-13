@@ -70,7 +70,7 @@
 				</div>
 			</div>
 		</header>
-		<main>
+		<main class="main">
 			<section class="header__body">
 				<div class="container">
 					<div class="header__body-inner">
@@ -699,6 +699,84 @@
 							</div>
 
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__sert">
+				<div class="container">
+					<div class="main__sert-inner">
+						<div class="sert__title-box">
+							<div class="sert__quote-left"></div>
+							<div class="sert__title">В нашей компании работают лучшие специалисты, которые прекрасно разбираются в
+								современных технологиях и имеют более 3-х лет опыта работы.</div>
+						</div>
+					</div>
+					<div class="sert__content">
+						<div class="sert__text">
+							<article class="sert__paragraph">За счет этого мы гарантируем устранение любых неполадок и предоставляем
+								гарантию на все выполненные работы.</article>
+							<article class="sert__paragraph">Мы поможем не только восстановить работоспособность техники, но и
+								подскажем, как избежать возникновения подобных поломок в будущем.</article>
+							<article class="sert__paragraph">Квалифицированная консультация специалиста поможет безопасно пользоваться
+								компьютером. В нашем штате работают опытные специалисты.</article>
+						</div>
+						<div class="sert__slider-wrap">
+							<div class="sert__slider">
+								<div class="sert__slide">
+									<img class="sert__img" src="images/slide-sert/1.svg" alt="">
+								</div>
+								<div class="sert__slide">
+									<img class="sert__img" src="images/slide-sert/1.svg" alt="">
+								</div>
+								<div class="sert__slide">
+									<img class="sert__img" src="images/slide-sert/1.svg" alt="">
+								</div>
+								<div class="sert__slide">
+									<img class="sert__img" src="images/slide-sert/1.svg" alt="">
+								</div>
+								<div class="sert__slide">
+									<img class="sert__img" src="images/slide-sert/1.svg" alt="">
+								</div>
+							</div>
+							<div class="sert__slider-arrows">
+								<a href="" class="sert__slider-prev"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 13L1 7L7 1" stroke="#E2001A" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+								<a href="" class="sert__slider-next">
+									<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 13L7 7L1 1" stroke="#E2001A" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="main__form">
+				<div class="container">
+					<div class="main__form-inner">
+						<fieldset class="form__box">
+							<legend class="form__sale">50%</legend>
+							<div class="form__content">
+								<div class="form__text">Записаться на диагностику
+									в <span>удобное</span> вам время</div>
+							</div>
+							<form class="form__inputs">
+								<div class="form__row">
+									<input class="form__input-day" required placeholder="День" type="text" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+									<input class="form__input-time" required placeholder="Время" type="text" min="09:00" max="20:00" onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}">
+								</div>
+								<div class="form__row-btn">
+									<input class="form__input-phone" required placeholder="Телефон" type="tel" onkeypress="return isNumberKey(event)">
+								</div>
+								<button class="form__button" type="button">Записаться</button>
+							</form>
+						</fieldset>
 					</div>
 				</div>
 			</section>
