@@ -2,6 +2,7 @@ hmtl,
 body {
   background: #F4F9FC;
   background-size: cover;
+  scroll-behavior: smooth;
 }
 
 header {
