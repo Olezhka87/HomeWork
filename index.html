@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="icon" href="images/favicon1.ico">
 	<title>Arron - Сервисный центр по ремонту телефонов</title>
 </head>
@@ -79,9 +79,7 @@
 								с Вашим устройством?</h1>
 							<p class="header__text">Решаем любые проблемы!
 								Большой склад и опытные мастера</p>
-							<button type="button">
-								<a href="" class="header__button">Бесплатная консультация</a>
-							</button>
+							<button class="header__button">Бесплатная консультация</button>
 						</div>
 						<div class="header__img-box">
 							<img class="header__img-master" src="images/master.svg" alt="мастер по ремонту телефонов">
@@ -323,11 +321,11 @@
 				<div class="container">
 					<div class="main__about-inner">
 						<div class="about__content">
-							<div class="about__title">О компании Arron</div>
-							<div class="about__text">Узнайте о нашей компании больше из видео за 1 минуту.</div>
+							<h2 class="about__title">О компании Arron</h2>
+							<h4 class="about__text">Узнайте о нашей компании больше из видео за 1 минуту.</h4>
 							<button class="about__button-box">
 								<span>Смотреть</span>
-								<img class="about__icon-play" src="images/icons/consult-arrow-play.svg"></img>
+								<img class="about__icon-play" src="images/icons/consult-arrow-play.svg" alt="стрелка видео">
 							</button>
 						</div>
 						<div class="about__box">
@@ -369,7 +367,7 @@
 				<div class="container">
 					<div class="main__reviews--inner">
 						<div class="reviews-heading">
-							<div class="reviews__title">Отзывы счастливых клиентов</div>
+							<h2 class="reviews__title">Отзывы счастливых клиентов</h2>
 							<div class="reviews__arrow-box">
 								<div class="team__slider-arrows">
 									<a href="" class="slider__team-arrow reviews__slider-prev"><svg width="8" height="14"
@@ -485,7 +483,7 @@
 					<div class="container">
 						<div class="main__order--inner">
 							<div class="order-heading">
-								<div class="order__title">Выполненные заказы</div>
+								<h2 class="order__title">Выполненные заказы</h2>
 								<div class="order__arrow-box">
 									<div class="team__slider-arrows">
 										<a href="" class="slider__team-arrow order__slider-prev"><svg width="8" height="14"
@@ -572,9 +570,7 @@
 									</div>
 									<div class="check__text-text">Получите чек лист - Что делать, если ноутбук или телефон грузится</div>
 								</div>
-								<button type="button">
-									<a class="header__button" href="">Получить чек лист</a>
-								</button>
+								<button class="header__button">Получить чек лист</button>
 							</div>
 							<div class="check__service">
 								<div class="check__left">
@@ -707,18 +703,18 @@
 					<div class="main__sert-inner">
 						<div class="sert__title-box">
 							<div class="sert__quote-left"></div>
-							<div class="sert__title">В нашей компании работают лучшие специалисты, которые прекрасно разбираются в
-								современных технологиях и имеют более 3-х лет опыта работы.</div>
+							<h4 class="sert__title">В нашей компании работают лучшие специалисты, которые прекрасно разбираются в
+								современных технологиях и имеют более 3-х лет опыта работы.</h4>
 						</div>
 					</div>
 					<div class="sert__content">
 						<div class="sert__text">
-							<article class="sert__paragraph">За счет этого мы гарантируем устранение любых неполадок и предоставляем
-								гарантию на все выполненные работы.</article>
-							<article class="sert__paragraph">Мы поможем не только восстановить работоспособность техники, но и
-								подскажем, как избежать возникновения подобных поломок в будущем.</article>
-							<article class="sert__paragraph">Квалифицированная консультация специалиста поможет безопасно пользоваться
-								компьютером. В нашем штате работают опытные специалисты.</article>
+							<p class="sert__paragraph">За счет этого мы гарантируем устранение любых неполадок и предоставляем
+								гарантию на все выполненные работы.</p>
+							<p class="sert__paragraph">Мы поможем не только восстановить работоспособность техники, но и
+								подскажем, как избежать возникновения подобных поломок в будущем.</p>
+							<p class="sert__paragraph">Квалифицированная консультация специалиста поможет безопасно пользоваться
+								компьютером. В нашем штате работают опытные специалисты.</p>
 						</div>
 						<div class="sert__slider-wrap">
 							<div class="sert__slider">
@@ -763,16 +759,19 @@
 						<fieldset class="form__box">
 							<legend class="form__sale">50%</legend>
 							<div class="form__content">
-								<div class="form__text">Записаться на диагностику
-									в <span>удобное</span> вам время</div>
+								<h2 class="form__text">Записаться на диагностику
+									в <span>удобное</span> вам время</h2>
 							</div>
 							<form class="form__inputs">
 								<div class="form__row">
-									<input class="form__input-day" required placeholder="День" type="text" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
-									<input class="form__input-time" required placeholder="Время" type="text" min="09:00" max="20:00" onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}">
+									<input class="form__input-day" required placeholder="День" type="text" onfocus="(this.type='date')"
+										onblur="if(this.value==''){this.type='text'}">
+									<input class="form__input-time" required placeholder="Время" type="text" onfocus="(this.type='time')"
+										onblur="if(this.value==''){this.type='text'}">
 								</div>
 								<div class="form__row-btn">
-									<input class="form__input-phone" required placeholder="Телефон" type="tel" onkeypress="return isNumberKey(event)">
+									<input class="form__input-phone" required placeholder="Телефон" type="tel"
+										onkeypress="return isNumberKey(event)">
 								</div>
 								<button class="form__button" type="button">Записаться</button>
 							</form>
@@ -780,15 +779,109 @@
 					</div>
 				</div>
 			</section>
-	</div>
+			<section class="main__contact">
+				<div class="container">
+					<div class="main__contact-inner">
+						<h2 class="contact__title">Наши контакты</h2>
+						<div class="contact__content">
+							<div class="contact__slider-wrap">
+								<div class="contact__slider">
+									<div class="contact__slide">
+										<img class="contact__img" src="images/slide-contact/1.svg" alt="">
+									</div>
+									<div class="contact__slide">
+										<img class="contact__img" src="images/slide-contact/1.svg" alt="">
+									</div>
+									<div class="contact__slide">
+										<img class="contact__img" src="images/slide-contact/1.svg" alt="">
+									</div>
+									<div class="contact__slide">
+										<img class="contact__img" src="images/slide-contact/1.svg" alt="">
+									</div>
+									<div class="contact__slide">
+										<img class="contact__img" src="images/slide-contact/1.svg" alt="">
+									</div>
+								</div>
+								<div class="contact__slider-arrows">
+									<a href="" class="contact__slider-prev"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M7 13L1 7L7 1" stroke="#E2001A" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</a>
+									<a href="" class="contact__slider-next">
+										<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 13L7 7L1 1" stroke="#E2001A" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="contact__image-box">
+								<img class="contact__img" src="images/contact-play.svg" alt="офис по ремонту гаджетов">
+								<a href="" class="contact__button-play" tabindex="0">
+									<svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.750122 1.37415C0.750122 0.58298 1.62537 0.105138 2.29088 0.532967L9.94163 5.4513C10.5539 5.84494 10.554 6.74002 9.94163 7.13366L2.29088 12.052C1.62537 12.4798 0.750122 12.002 0.750122 11.2108V1.37415Z"
+											fill="#E2001A"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
 
-	</section>
-	</main>
-	<footer></footer>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__row">
+						<div class="footer__tel footer__contact-item">069 82 77 38 / 079 92 77 38</div>
+						<div class="footer__mail footer__contact-item">info@arron.md</div>
+						<div class="footer__geo footer__contact-item">г. Кишинев, ул. Бэнулеску Бодони, д.33</div>
+					</div>
+					<div class="footer__row-rate">
+						<div class="footer__rating">
+							<div class="footer__rating-title">Рейтинг сервиса</div>
+							<div class="footer__rating-stars">
+								<img class="footer__rating-star" src="images/icons/stars-icon.svg" alt="звезда">
+								<img class="footer__rating-star" src="images/icons/stars-icon.svg" alt="звезда">
+								<img class="footer__rating-star" src="images/icons/stars-icon.svg" alt="звезда">
+								<img class="footer__rating-star" src="images/icons/stars-icon.svg" alt="звезда">
+								<img class="footer__rating-star" src="images/icons/stars-icon.svg" alt="звезда">
+							</div>
+							<div class="footer__text-rate">4.8/5.0 - 403 голоса</div>
+						</div>
+						<div class="footer__social">
+							<div class="footer__social-title">Мы в соцсетях</div>
+							<div class="footer__social-items">
+								<a class="footer__link" href="https://isnt.com" target="_blank">
+									<img src="images/icons/inst.svg" alt="инстаграм" class="footer_social-item">
+								</a>
+								<a class="footer__link" href="https://fb.com" target="_blank">
+									<img src="images/icons/fb.svg" alt="инстаграм" class="footer_social-item">
+								</a>
+								<a class="footer__link" href="https://tiktok.com" target="_blank">
+									<img src="images/icons/tiktok.svg" alt="инстаграм" class="footer_social-item">
+								</a>
+								<a class="footer__link" href="https://youtube.com" target="_blank">
+									<img src="images/icons/yt.svg" alt="инстаграм" class="footer_social-item">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script async
+				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbeee008f28eb3201365c42bb73d4aeee8fbb5811052b0eab61b40b08696d372&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+		</footer>
 	</div>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
-<script src="js/jquery-3.6.4.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/main.js"></script>
+
 
 </html>

@@ -1287,6 +1287,7 @@ header {
 
 .form__sale {
   position: relative;
+  padding-right: 20px;
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 700;
@@ -1299,7 +1300,7 @@ header {
   content: "";
   position: absolute;
   top: -17px;
-  right: -98px;
+  right: -82px;
   background: url(../images/icons/fire__icon.svg) 0 0/100% no-repeat;
   width: 192px;
   height: 32px;
@@ -1381,4 +1382,235 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.main__contact {
+  margin-bottom: 267px;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  color: #13171D;
+  margin-bottom: 40px;
+}
+
+.contact__slider-wrap {
+  position: relative;
+  margin-right: 80px;
+  margin-left: -7px;
+}
+
+.contact__slider {
+  max-width: 590px;
+  border-radius: 150px;
+}
+
+.contact__slider-arrows {
+  display: flex;
+  position: absolute;
+  top: 39%;
+  justify-c: space-between;
+}
+
+.contact__slider-prev {
+  position: absolute;
+  left: -12px;
+  width: 48px;
+  border: solid 0px;
+  outline: none;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.5);
+  padding: 18px 20px;
+  margin-right: 37px;
+}
+.contact__slider-prev:hover {
+  background: #E2001A;
+}
+.contact__slider-prev:hover path {
+  stroke: #fff;
+}
+
+.contact__slider-next {
+  position: absolute;
+  right: -612px;
+  width: 48px;
+  border: solid 0px;
+  outline: none;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
+  padding: 18px 21px;
+}
+.contact__slider-next:hover {
+  background: #E2001A;
+}
+.contact__slider-next:hover path {
+  stroke: #fff;
+}
+
+.contact__image-box {
+  position: relative;
+}
+.contact__image-box img {
+  max-width: 582px;
+}
+
+.contact__img {
+  max-width: 582px;
+  border-radius: 15px;
+}
+
+.contact__button-play {
+  position: absolute;
+  width: 48px;
+  border: solid 0px;
+  outline: none;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.7);
+  padding: 18.25px 19.75px;
+  position: absolute;
+  top: 39%;
+  left: 45%;
+}
+.contact__button-play:hover {
+  background: #E2001A;
+}
+.contact__button-play:hover path {
+  fill: #fff;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer__inner {
+  position: absolute;
+  margin-top: -183px;
+  max-width: 1300px;
+  background: #FFFFFF;
+  box-shadow: 0px 50px 60px rgba(255, 107, 0, 0.08), 0px 8px 10px rgba(255, 107, 0, 0.08);
+  border-radius: 30px;
+  padding: 55px 70px 55px;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.footer__tel {
+  padding-left: 72px;
+  position: relative;
+}
+.footer__tel::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 1%;
+  background: url(../images/icons/tel-icon-f.svg);
+  width: 56px;
+  height: 56px;
+}
+
+.footer__mail {
+  padding-left: 72px;
+  position: relative;
+}
+.footer__mail::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 1%;
+  background: url(../images/icons/mail-icon-f.svg);
+  width: 56px;
+  height: 56px;
+}
+
+.footer__geo {
+  padding-left: 72px;
+  position: relative;
+}
+.footer__geo::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 1%;
+  background: url(../images/icons/geo-icon-f.svg);
+  width: 56px;
+  height: 56px;
+}
+
+.footer__contact-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13171D;
+  margin-right: 39px;
+}
+
+.footer__contact-item:last-child {
+  margin-right: 0;
+}
+
+.footer__row-rate {
+  display: flex;
+}
+
+.footer__rating {
+  margin-right: 188px;
+}
+
+.footer__rating-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13171D;
+  margin-bottom: 16px;
+}
+
+.footer__rating-stars {
+  margin-bottom: 10px;
+}
+
+.footer__rating-star {
+  margin-right: 10px;
+}
+
+.footer__social-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13171D;
+  margin-bottom: 16px;
+}
+
+.footer_social-item {
+  margin-right: 15px;
 }/*# sourceMappingURL=style.css.map */
