@@ -1082,7 +1082,6 @@ header {
 .gift__slide .gift__img {
   position: relative;
   max-width: 302px;
-  height: 310;
 }
 .gift__slide .gift__img::after {
   margin-left: 0px;
@@ -1215,7 +1214,6 @@ header {
   display: flex;
   position: absolute;
   top: 40%;
-  justify-c: space-between;
 }
 
 .sert__slider-prev {
@@ -1418,7 +1416,6 @@ header {
   display: flex;
   position: absolute;
   top: 39%;
-  justify-c: space-between;
 }
 
 .contact__slider-prev {
